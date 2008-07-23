@@ -1,6 +1,6 @@
 %define	module	LockFile-Simple
 %define	version	0.2.5
-%define	release	%mkrel 6
+%define	release	%mkrel 8
 %define	pdir	LockFile
 
 Summary: 	%{module} module for perl
