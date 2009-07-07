@@ -1,32 +1,31 @@
-%define	module	LockFile-Simple
-%define	version	0.2.5
-%define	release	%mkrel 8
-%define	pdir	LockFile
+%define	upstream_name	 LockFile-Simple
+%define	upstream_version 0.207
 
-Summary: 	%{module} module for perl
-Name: 		perl-%{module}
-Version: 	%{version}
-Release: 	%{release}
-License: 	GPL or Artistic
+Name: 		perl-%{upstream_name}
+Version: 	%perl_convert_version %{upstream_version}
+Release: 	%mkrel 1
+
+Summary: 	simple file locking scheme
+License: 	GPL+ or Artistic
 Group:		Development/Perl
-Source0:	%{module}-%{version}.tar.bz2
-Url:		http://search.cpan.org/search?dist=%{module}
-BuildArch: 	noarch
-BuildRoot:	%{_tmppath}/%{name}-buildroot
-Requires:	perl , perl-base 
-BuildRequires:	perl-devel
+Url:        http://search.cpan.org/dist/%{upstream_name}/
+Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/LockFile/%{upstream_name}-%{upstream_version}.tar.gz
+
+
+BuildArch: noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description 
-%{module} module for perl.  The LockFile::Simple extension 
-provides simple file locking, of the advisory kind, i.e. it requires
-cooperation between applications wishing to lock the same files.
+The LockFile::Simple extension provides simple file locking, of the
+advisory kind, i.e. it requires cooperation between applications wishing
+to lock the same files.
 
 It is meant to be used in quick-and-dirty scripts or more elaborated
 programs that want a simple locking scheme, yet with a reasonable
 level of configuration.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
