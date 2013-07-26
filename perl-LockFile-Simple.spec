@@ -1,15 +1,15 @@
 %define	upstream_name	 LockFile-Simple
-%define	upstream_version 0.207
+%define upstream_version 0.208
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.208
+Release:	1
 
 Summary:	The LockFile::Simple extension provides simple file locking
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/LockFile/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/LockFile/LockFile-Simple-0.208.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -82,4 +82,5 @@ make test
 * Mon Jun 17 2002 Lenny Cartier <lenny@mandrakesoft.com> 0.2.5-1mdk
 - from Peter Chen <petechen@netilla.com> :
 	- 0.2.5
+
 
