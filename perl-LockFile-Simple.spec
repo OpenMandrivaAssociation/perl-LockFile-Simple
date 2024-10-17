@@ -8,7 +8,7 @@ Release:	3
 Summary:	The LockFile::Simple extension provides simple file locking
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/LockFile/LockFile-Simple-0.208.tar.gz
 
 BuildRequires:	perl-devel
