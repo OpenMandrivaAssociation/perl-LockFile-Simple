@@ -2,14 +2,14 @@
 %define upstream_version 0.208
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.208
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	The LockFile::Simple extension provides simple file locking
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/LockFile/LockFile-Simple-0.208.tar.gz
+Url:		https://metacpan.org/dist/LockFile-Simple
+Source0:	https://cpan.metacpan.org/authors/id/S/SC/SCHWIGON/lockfile-simple/LockFile-Simple-0.208.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
