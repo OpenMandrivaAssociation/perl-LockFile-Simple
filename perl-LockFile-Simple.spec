@@ -1,9 +1,7 @@
 %define	upstream_name	 LockFile-Simple
-%define upstream_version 0.208
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.208
+Release:	5
 
 Summary:	The LockFile::Simple extension provides simple file locking
 License:	GPL+ or Artistic
@@ -25,7 +23,7 @@ programs that want a simple locking scheme, yet with a reasonable
 level of configuration.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -46,8 +44,7 @@ make test
 * Tue Jul 07 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.207.0-1mdv2010.0
 + Revision: 393281
 - update to 0.207
-- using %%perl_convert_version
-- fixed summary, license & description fields
+- using %0.208 fixed summary, license & description fields
 - using plain url for source0
 
 * Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.2.5-8mdv2009.0
