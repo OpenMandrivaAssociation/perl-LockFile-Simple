@@ -2,7 +2,7 @@
 %define upstream_version 0.208
 Name:		perl-%{upstream_name}
 Version:	0.208
-Release:	3
+Release:	4
 
 Summary:	The LockFile::Simple extension provides simple file locking
 License:	GPL+ or Artistic
